@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ChapActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="230dp">
+
+        <ImageView
+            android:id="@+id/imgAnhTruyens"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg" />
+
+        <TextView
+
+            android:id="@+id/txvTenTruyen"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Tên Truyện"
+            android:gravity="center"
+            android:textSize="35sp"
+            android:padding="5dp"
+            android:textColor="#fff"
+            android:background="#B4000000" />
+    </RelativeLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayoutChap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ListView
+            android:id="@+id/lsvDanhSachChap"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+        </ListView>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</LinearLayout>
